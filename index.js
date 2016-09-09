@@ -31,3 +31,16 @@ io.on('connection', function(socket){
 http.listen(3000, function(){
   console.log('listening on *:3000');
 });
+
+/*
+TODO
+- look for global variables
+- show all users in index.html
+- unique pseudo
+- better autoscroll when img are posted
+- personnal color
+- see if there is better place for var pseudo
+- add mongodb to stock pseudos and colors
+- return to line if message is longer than windows (when you have 1 single word)
+- style user > msg to get all umessage align vertically (like in array)
+*/

@@ -41,8 +41,10 @@
 
       socket.on('chat image', function(msg){
         var img = $('<img>').attr('src', msg.img);
+        var a = $('<a>').attr('href', msg.img).attr('target', "_blank");
         var li = $('<li>').text(msg.user);
-        li.append(img);
+        a.append(img);
+        li.append(a);
         $('#messages').append(li);
         $(document).scrollTop($(document).height());
       });
